@@ -1,4 +1,3 @@
-
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -7,6 +6,7 @@
 /public/bundles/
 /var/
 /vendor/
+/.env
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
@@ -18,3 +18,22 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+
+# Ignore IDE files
+/.idea
+/.vscode
+
+# Ignore logs and cache
+/var/logs/*
+/var/cache/*
+/var/sessions/*
+
+# Ignore static files built by Webpack Encore (if used)
+/public/build/
+/node_modules/
+
+# Ignore composer lock file if not committing it
+/composer.lock
+
+# Ignore local PHPStorm config
+/.phpstorm.meta.php

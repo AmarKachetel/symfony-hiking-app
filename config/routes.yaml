@@ -1,3 +1,10 @@
+# config/routes.yaml
+
 controllers:
-    resource: ../src/Controller/
-    type: attribute
+  resource: ../src/Controller/
+  type: annotation
+
+# Uncomment below if you use routes defined in YAML
+# framework:
+#   resource: 'kernel:loadRoutes'
+#   type: service
